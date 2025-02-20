@@ -2,7 +2,6 @@
 
 ## High Priority
 
-- [ ] Add header (sticky) and footer (https://github.com/documenso/documenso/blob/main/apps/web/src/components/(dashboard)/layout/header.tsx)
 - [ ] Add 404 not found page.
 - [ ] Read session and user data in your Next.js app with Clerk. https://clerk.com/docs/references/nextjs/read-session-data
 - [ ] Add dashboard page
@@ -30,6 +29,7 @@
 
 ## Completed
 
+- [x] Add header (sticky) and footer (https://github.com/documenso/documenso/blob/main/apps/web/src/components/(dashboard)/layout/header.tsx)
 - [x] Add next-theme to the project
 - [x] Design Tailwind CSS sign-in and registration components. https://tailwindui.com/components/application-ui/forms/sign-in-forms
 - [x] Add custom onboarding to your authentication flow.[https://clerk.com/docs/references/nextjs/add-onboarding-flow]
@@ -45,6 +45,7 @@
 3. Next.js landing page templates, A beautiful collection of the best 18 free and premium Next.js landing page templates. These templates have been created using the famous Next.js framework, which is very efficient for creating production-ready apps, and leverages server-side rendering (SSR) to improve performance and SEO. https://saaslandingpage.com/templates/next-js/
 4. Beautiful UI components, crafted with Tailwind CSS - https://tailwindui.com/components#product-application-ui-forms
 5. next-themes, An abstraction for themes in your React app. https://www.npmjs.com/package/next-themes
+6. Responsive Header - The Ultimate Guide to Crafting a Responsive Header with React and Tailwind CSS - https://dev.to/chintanonweb/the-ultimate-guide-to-crafting-a-responsive-header-with-react-and-tailwind-css-o7g
 
 ## Example Repositories
 
