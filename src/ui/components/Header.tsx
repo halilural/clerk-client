@@ -18,7 +18,7 @@ const Header = () => {
     <header className='sticky top-0 z-50'>
       <nav className='border-gray-200 bg-white px-4 py-2.5 shadow dark:bg-gray-800 lg:px-6'>
         <div className='mx-auto flex max-w-screen-lg flex-wrap items-center justify-between'>
-          <Link href='/home' className='flex items-center'>
+          <Link href='/' className='flex items-center'>
             <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
               Logo
             </span>
@@ -34,8 +34,8 @@ const Header = () => {
             <ul className='flex flex-col gap-0 md:flex-row md:gap-8'>
               <li>
                 <Link
-                  href='/home'
-                  className='md:hover:text-primary-700 block border-b border-gray-100 bg-[#191919]/10 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:px-2 md:py-0.5 md:hover:bg-transparent md:dark:hover:bg-transparent md:dark:hover:text-white'
+                  href='/'
+                  className='md:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent md:dark:hover:text-white'
                 >
                   Home
                 </Link>

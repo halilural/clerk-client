@@ -2,7 +2,7 @@
 
 ## High Priority
 
-- [ ] Add 404 not found page.
+- [ ] when 404 not found page is loaded, header is loaded weirdly (fix it).
 - [ ] Read session and user data in your Next.js app with Clerk. https://clerk.com/docs/references/nextjs/read-session-data
 - [ ] Add dashboard page
 - [ ] Implement basic Role Based Access Control (RBAC) with metadata. https://clerk.com/docs/references/nextjs/basic-rbac
@@ -29,6 +29,7 @@
 
 ## Completed
 
+- [x] Add 404 not found page.
 - [x] Add header (sticky) and footer (https://github.com/documenso/documenso/blob/main/apps/web/src/components/(dashboard)/layout/header.tsx)
 - [x] Add next-theme to the project
 - [x] Design Tailwind CSS sign-in and registration components. https://tailwindui.com/components/application-ui/forms/sign-in-forms

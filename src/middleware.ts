@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const isOnboardingRoute = createRouteMatcher(['/onboarding']);
 const isPublicRoute = createRouteMatcher([
-  '/home(.*)',
+  '/',
   '/pricing(.*)',
   '/contact-us(.*)',
   '/sign-in(.*)',
