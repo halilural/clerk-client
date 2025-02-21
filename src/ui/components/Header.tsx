@@ -5,8 +5,8 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
-  SignOutButton,
   SignUpButton,
+  UserButton,
 } from '@clerk/nextjs';
 import ThemeButton from './ThemeButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -87,14 +87,7 @@ const Header = () => {
               </SignUpButton>
             </SignedOut>
             <SignedIn>
-              <SignOutButton>
-                <button
-                  className='mt-4 rounded-full border border-transparent bg-slate-600 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg focus:bg-slate-700 md:mt-0'
-                  type='button'
-                >
-                  Sign Out
-                </button>
-              </SignOutButton>
+              <UserButton />
             </SignedIn>
             {!nav && <ThemeButton />}
           </div>
