@@ -2,11 +2,9 @@
 
 ## High Priority
 
-- [ ] Add logout button
-- [ ] Read session and user data in your Next.js app with Clerk. https://clerk.com/docs/references/nextjs/read-session-data
-- [ ] Add dashboard page
 - [ ] Implement basic Role Based Access Control (RBAC) with metadata. https://clerk.com/docs/references/nextjs/basic-rbac
-- [ ] Set up a waitlist in your Next.js app. https://clerk.com/docs/references/nextjs/waitlist
+- [ ] - [ ] Set up a waitlist in your Next.js app. https://clerk.com/docs/references/nextjs/waitlist
+- [ ] Add dashboard page
 
 ## Medium Priority
 
@@ -30,6 +28,8 @@
 
 ## Completed
 
+- [x] Read session and user data in your Next.js app with Clerk. https://clerk.com/docs/references/nextjs/read-session-data
+- [x] Add logout button
 - [x] Add 404 not found page.
 - [x] Add header (sticky) and footer (https://github.com/documenso/documenso/blob/main/apps/web/src/components/(dashboard)/layout/header.tsx)
 - [x] Add next-theme to the project
