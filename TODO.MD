@@ -2,7 +2,7 @@
 
 ## High Priority
 
-- [ ] when 404 not found page is loaded, header is loaded weirdly (fix it).
+- [ ] Add logout button
 - [ ] Read session and user data in your Next.js app with Clerk. https://clerk.com/docs/references/nextjs/read-session-data
 - [ ] Add dashboard page
 - [ ] Implement basic Role Based Access Control (RBAC) with metadata. https://clerk.com/docs/references/nextjs/basic-rbac
@@ -10,6 +10,7 @@
 
 ## Medium Priority
 
+- [ ] when 404 not found page is loaded, header is loaded weirdly (fix it).
 - [ ] Build a custom flow for handling user impersonation. https://clerk.com/docs/custom-flows/user-impersonation
 - [ ] Create a custom forgot password flow using the Clerk API. https://clerk.com/docs/custom-flows/forgot-password
 - [ ] Add bot protection to your custom sign-up flow. https://clerk.com/docs/custom-flows/bot-sign-up-protection

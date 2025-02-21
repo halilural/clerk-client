@@ -1,7 +1,13 @@
 'use client';
 // src/ui/components/Header.tsx
 import React, { useState, useEffect } from 'react';
-import { SignInButton, SignUpButton } from '@clerk/nextjs';
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignOutButton,
+  SignUpButton,
+} from '@clerk/nextjs';
 import ThemeButton from './ThemeButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -56,26 +62,40 @@ const Header = () => {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <SignInButton>
-                  <Link
-                    href='#'
-                    className='md:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent md:dark:hover:text-white'
-                  >
-                    Sign In
-                  </Link>
-                </SignInButton>
-              </li>
+              <SignedOut>
+                <li>
+                  <SignInButton>
+                    <Link
+                      href='#'
+                      className='md:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent md:dark:hover:text-white'
+                    >
+                      Sign In
+                    </Link>
+                  </SignInButton>
+                </li>
+              </SignedOut>
               {/* Add more links here */}
             </ul>
-            <SignUpButton>
-              <button
-                className='mt-4 rounded-full border border-transparent bg-slate-800 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg focus:bg-slate-700 md:mt-0'
-                type='button'
-              >
-                Sign Up Now
-              </button>
-            </SignUpButton>
+            <SignedOut>
+              <SignUpButton>
+                <button
+                  className='mt-4 rounded-full border border-transparent bg-slate-600 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg focus:bg-slate-700 md:mt-0'
+                  type='button'
+                >
+                  Sign Up Now
+                </button>
+              </SignUpButton>
+            </SignedOut>
+            <SignedIn>
+              <SignOutButton>
+                <button
+                  className='mt-4 rounded-full border border-transparent bg-slate-600 px-4 py-2 text-center text-sm text-white shadow-md transition-all hover:shadow-lg focus:bg-slate-700 md:mt-0'
+                  type='button'
+                >
+                  Sign Out
+                </button>
+              </SignOutButton>
+            </SignedIn>
             {!nav && <ThemeButton />}
           </div>
 
