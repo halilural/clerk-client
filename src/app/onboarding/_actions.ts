@@ -2,6 +2,7 @@
 'use server';
 
 import { auth, clerkClient } from '@clerk/nextjs/server';
+import { Roles } from '@/types/globals';
 
 export const completeOnboarding = async (formData: FormData) => {
   const { userId } = await auth();
@@ -13,11 +14,14 @@ export const completeOnboarding = async (formData: FormData) => {
   const client = await clerkClient();
 
   try {
+    const role: Roles = 'user';
+
     const res = await client.users.updateUser(userId, {
       publicMetadata: {
         onboardingComplete: true,
         applicationName: formData.get('applicationName'),
         applicationType: formData.get('applicationType'),
+        role: role,
       },
     });
     return { message: res.publicMetadata };
