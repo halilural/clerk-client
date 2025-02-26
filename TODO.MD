@@ -3,6 +3,8 @@
 ## High Priority
 
 - [ ] Add dashboard page
+- [ ] Add profile page
+- [ ] Add Account Settings page
 
 ## Medium Priority
 
